@@ -192,7 +192,7 @@ export default function SolutionsPage() {
                 </h4>
                 <p className="text-sm text-gray-500 mb-4">{story.type}</p>
                 <p className="text-gray-300 leading-relaxed">
-                  "{story.comment}"
+                  &ldquo;{story.comment}&rdquo;
                 </p>
               </div>
             ))}

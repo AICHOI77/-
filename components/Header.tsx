@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -58,7 +59,7 @@ export default function Header() {
         >
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
               <Image
                 src="/image.png"
                 alt="자영업킹 로고"
@@ -69,7 +70,7 @@ export default function Header() {
               <span className="text-xl font-bold text-white">
                 자영업킹
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
